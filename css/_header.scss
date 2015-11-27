@@ -1,0 +1,92 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.header {
+
+  &-top {
+    padding: 20px 0;
+
+    &-contacts {
+      float: right;
+
+      &__top {
+        padding: 0 0 2px;
+      }
+
+      &__link {
+        float: right;
+        text-decoration: none;
+        border-bottom: 1px dotted $color-font-link;
+        margin: 6px 0 0 10px;
+
+        &:hover,
+        &:active {
+          text-decoration: none;
+          border: none;
+        }
+      }
+
+      &__phone {
+        font-size: 19px;
+        font-family: "TextbookNewWeb";
+        font-weight: bold;
+      }
+    }
+
+    &-personal {
+      text-align: right;
+
+      &-auth {
+        margin: 0 0 10px;
+
+        &__link {
+          padding: 0 20px 0 0;
+          position: relative;
+          color: $color-font-default;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 0;
+            background-image: url( $directory-image-base + 'corner-down.png' );
+            @include background-image-style();
+            width: 14px;
+            height: 8px;
+          }
+        }
+      }
+
+      &-basket {
+
+        &__link {
+          font-weight: bold;
+          color: $color-font-default;
+          position: relative;
+          padding: 0 0 0 40px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            background-image: url( $directory-image-base + 'basket.png' );
+            @include background-image-style();
+            width: 27px;
+            height: 25px;
+          }
+        }
+
+        &__count {
+          margin: 0 0 0 10px;
+          padding: 6px 10px;
+          border: 1px solid $color-font-default;
+          font-weight: bold;
+          color: $color-font-default;
+          @include border-radius(15px);
+        }
+      }
+    }
+  }
+}

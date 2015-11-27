@@ -1,0 +1,41 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+body {
+  font-size: $font-size-base;
+  font-family: "TextbookNewWebRegular";
+  color: $color-font-default;
+  position: relative;
+  margin: 0 0 170px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.link {
+  color: $color-font-link;
+  text-decoration: underline;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: $color-font-link;
+    text-decoration: none;
+  }
+}

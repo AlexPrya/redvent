@@ -1,0 +1,105 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.left {
+
+  &-menu {
+    margin: 0 0 20px;
+
+    &-top {
+      width: 100%;
+      background: $color-first;
+      position: relative;
+      @include border-top-radius(3px);
+
+      &__link {
+        display: block;
+        color: $color-font-second;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px 40px 15px 28px;
+        @include no-link-style($color-font-second);
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 15px;
+          top: 15px;
+          right: 14px;
+          background-image: url( $directory-image-base + 'burger.png' );
+          @include background-image-style();
+        }
+      }
+    }
+
+    &-bottom {
+      width: 100%;
+      background: $color-third;
+      @include border-botoom-radius(3px);
+
+      &-list {
+        padding: 28px 28px;
+        list-style: none;
+
+        &-item {
+          margin: 0 0 5px;
+
+          &__link {
+            color: $color-font-default;
+            @include link-style($color-font-default);
+          }
+        }
+      }
+    }
+  }
+
+  &-slider {
+    margin: 0 0 20px;
+
+    &-top {
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-top: 1px solid $color-border-first;
+      border-left: 1px solid $color-border-first;
+      border-right: 1px solid $color-border-first;
+      padding: 15px 40px 15px 28px;
+      @include border-top-radius(3px);
+    }
+
+    &-body {
+      width: 100%;
+      height: auto;
+    }
+
+    &-bottom {
+      width: 100%;
+      border-bottom: 1px solid $color-border-first;
+      border-left: 1px solid $color-border-first;
+      border-right: 1px solid $color-border-first;
+      padding: 15px 40px 15px 28px;
+      @include border-top-radius(3px);
+
+      &__link {
+        text-transform: lowercase;
+        @include link-style-invert($color-font-default);
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 11px;
+          height: 16px;
+          top: 0;
+          right: -16px;
+          background-image: url( $directory-image-base + 'corner-right.png' );
+          @include background-image-style();
+        }
+      }
+    }
+  }
+}

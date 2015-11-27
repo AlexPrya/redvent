@@ -1,0 +1,113 @@
+@import "../variables";
+
+// size mixins
+
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin square ($val) {
+    @include size($val, $val);
+}
+
+@mixin border-top-left-radius ($val) {
+    border-top-left-radius: $val;
+    -o-border-top-left-radius: $val;
+    -moz-border-top-left-radius: $val;
+    -webkit-border-top-left-radius: $val;
+}
+
+@mixin border-top-right-radius ($val) {
+    border-top-right-radius: $val;
+    -o-border-top-right-radius: $val;
+    -moz-border-top-right-radius: $val;
+    -webkit-border-top-right-radius: $val;
+}
+
+@mixin border-top-radius ($val) {
+    @include border-top-left-radius($val);
+    @include border-top-right-radius($val);
+}
+
+@mixin border-bottom-left-radius ($val) {
+    border-top-left-radius: $val;
+    -o-border-top-left-radius: $val;
+    -moz-border-top-left-radius: $val;
+    -webkit-border-top-left-radius: $val;
+}
+
+@mixin border-bottom-right-radius ($val) {
+    border-top-right-radius: $val;
+    -o-border-top-right-radius: $val;
+    -moz-border-top-right-radius: $val;
+    -webkit-border-top-right-radius: $val;
+}
+
+@mixin border-botoom-radius ($val) {
+    @include border-bottom-left-radius($val);
+    @include border-bottom-right-radius($val);
+}
+
+@mixin border-radius ($val) {
+    border-radius: $val;
+    -o-border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+}
+
+@mixin link-style ($color) {
+    text-decoration: underline;
+    outline: none;
+    color: $color;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        color: $color;
+    }
+}
+
+@mixin link-style-invert ($color) {
+    text-decoration: none;
+    outline: none;
+    color: $color;
+
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        color: $color;
+    }
+
+    &:hover,
+    &:active, {
+        text-decoration: underline;
+        outline: none;
+        color: $color;
+    }
+}
+
+@mixin no-link-style ($color) {
+    text-decoration: none;
+    outline: none;
+    color: $color;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        color: $color;
+    }
+}
+
+@mixin background-image-style () {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
