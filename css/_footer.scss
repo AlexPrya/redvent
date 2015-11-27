@@ -35,4 +35,42 @@
       }
     }
   }
+
+  &-contacts {
+    color: $color-font-second;
+
+    &-field {
+      padding: 0 0 0 40px;
+      margin: 0 0 15px;
+      position: relative;
+      font-size: 15px;
+
+      &.time {
+
+        &:before {
+          background-image: url( $directory-image-base + 'time-red.png' );
+        }
+      }
+
+      &.phone {
+
+        &:before {
+          background-image: url( $directory-image-base + 'phone-red.png' );
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include background-image-style();
+        @include square(30px);
+      }
+
+      &__link {
+        @include link-style($color-font-second)
+      }
+    }
+  }
 }

@@ -2,19 +2,33 @@
 @import "mixins/mixins";
 @import "variables";
 
+@font-face {
+  font-family: 'Textbook New Web';
+  src: local('Textbook New Web');
+  src: url("../fonts/TextbookNewWebRegular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Textbook New Web';
+  src: local('Textbook New Web');
+  src: url("../fonts/TextbookNewWebExtraBold.ttf") format("truetype");
+
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   font-size: $font-size-base;
-  font-family: "TextbookNewWebRegular";
+  font-family: "Textbook New Web";
+  font-weight: normal;
   color: $color-font-default;
-  position: relative;
-  margin: 0 0 170px;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 170px;
 }
 
 ul{

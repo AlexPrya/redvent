@@ -15,10 +15,10 @@
       }
 
       &__link {
-        float: right;
+        //float: right;
         text-decoration: none;
         border-bottom: 1px dotted $color-font-link;
-        margin: 6px 0 0 10px;
+        margin: 6px 0 0 0;
 
         &:hover,
         &:active {
@@ -29,8 +29,8 @@
 
       &__phone {
         font-size: 19px;
-        font-family: "TextbookNewWeb";
         font-weight: bold;
+        margin: 0 10px 0 0;
       }
     }
 

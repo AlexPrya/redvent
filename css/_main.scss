@@ -1,0 +1,116 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.main {
+
+  &-products {
+    margin: 0 0 25px;
+
+    &-tabs {
+      @include border-radius(3px);
+      background: $color-third;
+      display: inline-block;
+      margin: 0 0 30px;
+
+      &-item {
+        padding: 15px 20px;
+        display: inline-block;
+
+        &.active {
+          @include border-radius(3px);
+          background: $color-first;
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin: 0 0 0 -11px;
+            background-image: url( $directory-image-base + 'corner-tab-red.png' );
+            @include background-image-style();
+            width: 22px;
+            height: 10px;
+          }
+
+          .main-products-tabs-item__link {
+            color: $color-font-second;
+            @include link-style-invert($color-font-second)
+          }
+        }
+
+        &__link {
+          color: $color-font-default;
+          text-decoration: none;
+          @include link-style($color-font-default)
+        }
+      }
+    }
+
+    &-items {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      &-cont {
+        border-right: 1px solid $color-border-first;
+
+        &.last {
+          border: none;
+        }
+      }
+
+      &__item {
+        border: 1px solid $color-body-bg;
+        padding: 30px;
+
+        &:hover,
+        &:active {
+          border: 1px solid $color-border-first;
+          box-shadow: inset 0 0 100px -33px  $color-border-first;
+          @include border-radius(3px)
+        }
+      }
+
+      &__img {
+        margin: 0 auto 20px;
+        max-height: 110px;
+      }
+
+      &__link {
+        @include  link-style($color-font-link)
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin: 0 0 60px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      background-image: url( $directory-image-base + 'delimiter-title.png' );
+      @include background-image-style();
+      width: 134px;
+      height: 4px;
+    }
+  }
+
+  &-advantages {
+    margin: 0 0 30px;
+
+    &-list {
+      margin: 0 0 30px;
+
+      &__text {
+        margin: 30px 0 0;
+      }
+    }
+  }
+}

@@ -31,20 +31,20 @@
 }
 
 @mixin border-bottom-left-radius ($val) {
-    border-top-left-radius: $val;
-    -o-border-top-left-radius: $val;
-    -moz-border-top-left-radius: $val;
-    -webkit-border-top-left-radius: $val;
+    border-bottom-left-radius: $val;
+    -o-border-bottom-left-radius: $val;
+    -moz-border-bottom-left-radius: $val;
+    -webkit-border-bottom-left-radius: $val;
 }
 
 @mixin border-bottom-right-radius ($val) {
-    border-top-right-radius: $val;
-    -o-border-top-right-radius: $val;
-    -moz-border-top-right-radius: $val;
-    -webkit-border-top-right-radius: $val;
+    border-bottom-right-radius: $val;
+    -o-border-bottom-right-radius: $val;
+    -moz-border-bottom-right-radius: $val;
+    -webkit-border-bottom-right-radius: $val;
 }
 
-@mixin border-botoom-radius ($val) {
+@mixin border-bottom-radius ($val) {
     @include border-bottom-left-radius($val);
     @include border-bottom-right-radius($val);
 }

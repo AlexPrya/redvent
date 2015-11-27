@@ -9,9 +9,16 @@
 
     &-top {
       width: 100%;
-      background: $color-first;
       position: relative;
+      background: $color-third;
       @include border-top-radius(3px);
+      padding: 0 0 28px;
+
+      &-button {
+        background: $color-first;
+        @include border-top-radius(3px);
+
+      }
 
       &__link {
         display: block;
@@ -38,10 +45,10 @@
     &-bottom {
       width: 100%;
       background: $color-third;
-      @include border-botoom-radius(3px);
+      @include border-bottom-radius(3px);
 
       &-list {
-        padding: 28px 28px;
+        padding: 0 28px 28px;
         list-style: none;
 
         &-item {
@@ -72,7 +79,17 @@
 
     &-body {
       width: 100%;
-      height: auto;
+      max-height: 225px;
+      overflow: hidden;
+    }
+
+    &-item {
+      width: 100%;
+      height: 225px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: inline;
     }
 
     &-bottom {
@@ -85,6 +102,67 @@
 
       &__link {
         text-transform: lowercase;
+        @include link-style-invert($color-font-default);
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 11px;
+          height: 16px;
+          top: 0;
+          right: -16px;
+          background-image: url( $directory-image-base + 'corner-right.png' );
+          @include background-image-style();
+        }
+      }
+    }
+  }
+
+  &-reviews {
+    text-align: center;
+
+    &-title {
+      text-align: left;
+      padding: 15px 15px 15px 85px;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+      text-transform: uppercase;
+      background: $color-body-bg;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        top: 6px;
+        left: 15px;
+        background-image: url( $directory-image-base + 'reviews.png' );
+        @include background-image-style();
+      }
+    }
+
+    &-block {
+      width: 100%;
+      border: 1px solid $color-border-first;
+      padding: 40px 0 0;
+      margin: -33px 0 0;
+      @include border-radius(3px);
+    }
+
+    &-bottom {
+      width: 100%;
+      background: $color-third;
+      text-align: center;
+      padding: 10px 0;
+      margin: 15px 0 0;
+      @include border-bottom-radius(3px);
+
+      &__link {
         @include link-style-invert($color-font-default);
         position: relative;
 
