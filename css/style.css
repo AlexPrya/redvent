@@ -27,12 +27,15 @@ ul {
     margin: 0;
     padding: 0; }
 
-.link {
-  color: #008cc6;
-  text-decoration: underline; }
-  .link:hover, .link:active, .link:visited {
-    color: #008cc6;
-    text-decoration: none; }
+.text-dashed {
+  padding: 10px;
+  border: 2px dashed #e72329;
+  font-weight: bold; }
+.text-red {
+  color: #e72329; }
+.text-big {
+  font-size: 16px;
+  font-weight: bold; }
 
 .header-top {
   padding: 20px 0; }
@@ -42,7 +45,7 @@ ul {
       padding: 0 0 2px; }
     .header-top-contacts__link {
       text-decoration: none;
-      border-bottom: 1px dotted #008cc6;
+      border-bottom: 1px dashed #008cc6;
       margin: 6px 0 0 0; }
       .header-top-contacts__link:hover, .header-top-contacts__link:active {
         text-decoration: none;
@@ -296,7 +299,8 @@ ul {
         background-size: contain;
         background-repeat: no-repeat; }
 .left-reviews {
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 30px; }
   .left-reviews-title {
     text-align: left;
     padding: 15px 15px 15px 85px;
@@ -327,6 +331,23 @@ ul {
     -o-border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px; }
+    .left-reviews-block-item {
+      margin: 0 0 30px; }
+      .left-reviews-block-item__img {
+        max-width: 80%;
+        margin: 0 auto; }
+      .left-reviews-block-item__name {
+        text-decoration: none;
+        outline: none;
+        color: #333333; }
+        .left-reviews-block-item__name:visited, .left-reviews-block-item__name:focus {
+          text-decoration: none;
+          outline: none;
+          color: #333333; }
+        .left-reviews-block-item__name:hover, .left-reviews-block-item__name:active {
+          text-decoration: underline;
+          outline: none;
+          color: #333333; }
   .left-reviews-bottom {
     width: 100%;
     background: #f9f9f9;
@@ -367,6 +388,31 @@ ul {
         background-size: contain;
         background-repeat: no-repeat; }
 
+.main-slider {
+  width: 100%;
+  margin: 0 0 30px; }
+  .main-slider-item {
+    height: 280px;
+    padding: 45px 0 0 45px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .main-slider-item__descr {
+      margin: 0 0 25px 0; }
+    .main-slider-item__link {
+      border: 2px solid #e72329;
+      padding: 5px 10px;
+      border-radius: 3px;
+      -o-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      text-decoration: none;
+      outline: none;
+      color: #e72329; }
+      .main-slider-item__link:hover, .main-slider-item__link:active, .main-slider-item__link:visited, .main-slider-item__link:focus {
+        text-decoration: none;
+        outline: none;
+        color: #e72329; }
 .main-products {
   margin: 0 0 25px; }
   .main-products-tabs {
@@ -471,5 +517,103 @@ ul {
     margin: 0 0 30px; }
     .main-advantages-list__text {
       margin: 30px 0 0; }
+.main-form {
+  background: #f9f9f9;
+  padding: 5px 0 30px;
+  margin: 0 0 30px;
+  -webkit-box-shadow: 0px 4px 3px -2px #ccc;
+  -moz-box-shadow: 0px 4px 3px -2px #ccc;
+  box-shadow: 0px 4px 3px -2px #ccc; }
+  .main-form-title {
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase; }
+    .main-form-title.feedback {
+      padding: 35px 0 0 70px; }
+      .main-form-title.feedback:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("../img/main-form-phone.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 58px;
+        height: 63px; }
+  .main-form-field {
+    margin: 18px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0 10%; }
+    .main-form-field-text {
+      text-align: left;
+      width: 100%;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 3px;
+      -o-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px; }
+    .main-form-field-button {
+      font-weight: bold;
+      color: #fff;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      background-color: #e72329;
+      border-bottom: 2px solid #8f1316;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      outline: none;
+      margin: -2px 0 0;
+      border-radius: 3px;
+      -o-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px; }
+  .main-form__descr {
+    text-align: left; }
+.main-conditions {
+  width: 100%;
+  padding: 0 10% 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+  .main-conditions-title {
+    padding: 30px 0 15px;
+    font-weight: bold;
+    font-size: 20px; }
+  .main-conditions-list {
+    margin: 0 0 15px;
+    padding: 0; }
+    .main-conditions-list__item {
+      position: relative;
+      padding: 0 0 0 32px; }
+      .main-conditions-list__item:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../img/check-red.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 16px; }
+  .main-conditions__descr {
+    margin: 0 0 15px; }
+  .main-conditions__link {
+    font-weight: bold;
+    text-decoration: underline;
+    outline: none;
+    color: #008cc6; }
+    .main-conditions__link:hover, .main-conditions__link:active, .main-conditions__link:visited, .main-conditions__link:focus {
+      text-decoration: none;
+      outline: none;
+      color: #008cc6; }
 
 /*# sourceMappingURL=style.css.map */

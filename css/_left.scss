@@ -122,6 +122,7 @@
 
   &-reviews {
     text-align: center;
+    margin: 0 0 30px;
 
     &-title {
       text-align: left;
@@ -152,6 +153,19 @@
       padding: 40px 0 0;
       margin: -33px 0 0;
       @include border-radius(3px);
+
+      &-item {
+        margin: 0 0 30px;
+
+        &__img {
+          max-width: 80%;
+          margin: 0 auto;
+        }
+
+        &__name {
+          @include link-style-invert($color-font-default);
+        }
+      }
     }
 
     &-bottom {

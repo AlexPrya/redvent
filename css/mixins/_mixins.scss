@@ -56,6 +56,12 @@
     -webkit-border-radius: $val;
 }
 
+@mixin box-shadow($hoff, $voff, $blur, $skvn, $color) {
+    -webkit-box-shadow: $hoff $voff $blur $skvn $color;
+    -moz-box-shadow: $hoff $voff $blur $skvn $color;
+    box-shadow: $hoff $voff $blur $skvn $color;
+}
+
 @mixin link-style ($color) {
     text-decoration: underline;
     outline: none;
