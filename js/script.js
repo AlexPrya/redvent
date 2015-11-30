@@ -7,7 +7,12 @@ $('.left-slider-body').owlCarousel({
     nav:true
 });
 
+$('.main-slider').owlCarousel({
+    nav:false,
+    dots: true,
+    items:1
+});
+
 //
 // bootstrap.js
 //
-

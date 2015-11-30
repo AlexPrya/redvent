@@ -1,4 +1,4 @@
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
@@ -213,4 +213,25 @@
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
+}
+.owl-dots {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: -30px 0 0;
+}
+.owl-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('../../img/dot.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 10px 0 0;
+}
+.owl-dot:hover,
+.owl-dot:active,
+.owl-dot.active {
+  background: url('../../img/dot-active.png');
 }

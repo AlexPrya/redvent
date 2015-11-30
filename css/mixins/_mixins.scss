@@ -117,3 +117,16 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+@mixin number-list() {
+  $i: 1;
+  @while $i <= $number-list-length {
+    li:nth-child(#{$i}) {
+
+      &:before {
+        content: '#{$i}';
+      }
+    }
+    $i: $i + 1;
+  }
+}

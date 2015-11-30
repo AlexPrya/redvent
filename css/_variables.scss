@@ -13,6 +13,7 @@ $color-third: #f9f9f9;
 $color-font-default: #333333;
 $color-font-second: $color-body-bg;
 $color-font-link: #008cc6;
+$color-font-disabled: #999999;
 
 //
 // directories
@@ -25,3 +26,9 @@ $directory-image-base: '../img/';
 //
 
 $font-size-base: 14px;
+
+//
+// other
+//
+
+$number-list-length: 30;

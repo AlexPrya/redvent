@@ -31,6 +31,11 @@ footer {
   width: 100%;
 }
 
+h5 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 ul{
   margin: 0;
   padding: 0;
@@ -42,12 +47,18 @@ ul{
   }
 }
 
+img {
+
+  &.centered {
+    margin: 0 auto;
+  }
+}
+
 .text {
 
   &-dashed {
-    padding: 10px;
-    border: 2px dashed $color-first;
-    font-weight: bold;
+    padding: 15px 25px;
+    border: 3px dashed $color-first;
   }
 
   &-red {
@@ -57,5 +68,70 @@ ul{
   &-big {
     font-size: 16px;
     font-weight: bold;
+  }
+
+  &-field {
+    margin: 0 0 30px;
+
+    &-bg {
+      border: 1px solid $color-border-first;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 30px 0 30px 30px;
+      @include border-radius(3px);
+
+      &__title {
+        margin: 0 0 15px;
+      }
+    }
+  }
+
+  &-block {
+
+    ul{
+      margin: 0 0 15px;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding: 0 0 5px 28px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 0;
+          background-image: url( $directory-image-base + 'check-red.png' );
+          @include background-image-style();
+          width: 18px;
+          height: 16px;
+        }
+      }
+    }
+
+    ol{
+      margin: 0 0 15px;
+      padding: 0;
+      list-style: none;
+      @include number-list();
+
+      li {
+        position: relative;
+        padding: 0 0 5px 28px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -4px;
+          left: 0;
+          color: $color-first;
+          width: 18px;
+          height: 16px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

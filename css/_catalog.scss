@@ -1,0 +1,25 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.catalog {
+
+  &-sections {
+
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      margin: 0 0 30px;
+    }
+
+    &-item {
+      margin: 0 0 30px;
+
+      &__img {
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
