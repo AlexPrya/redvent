@@ -5,6 +5,7 @@
 .catalog {
 
   &-sections {
+    margin: 0 0 30px;
 
     &__title {
       text-align: center;
@@ -20,6 +21,77 @@
       &__img {
         margin: 0 0 10px;
       }
+
+      &__link {
+        @include link-style($color-font-link);
+      }
     }
+  }
+
+  &-section {
+    margin: 0 0 30px;
+
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &-item {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 10% 30px 0;
+
+      @media screen {
+
+        @media (max-width: 767px) {
+          max-width: 100%;
+        }
+      }
+
+      &-img_cont {
+        width: 33%;
+        float: left;
+      }
+
+      &-text_cont {
+        width: 67%;
+        float: left;
+      }
+
+      &__img {
+        margin: 0 20px 20px 0;
+      }
+
+      &__link {
+        @include link-style($color-font-link);
+      }
+    }
+
+    &__descr {
+      padding: 0 0 0 100px;
+      margin: 0 0 30px;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 61px;
+        height: 68px;
+        top: 0;
+        left: 15px;
+        background-image: url( $directory-image-base + 'catalog-section-descr.png' );
+        @include background-image-style();
+      }
+    }
+  }
+
+  &-delimiter {
+    width: 100%;
+    height: 100px;
+    margin: -100px 0 30px;
+    background-image: url("#{$directory-image-base}delimiter-catalog-section.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
