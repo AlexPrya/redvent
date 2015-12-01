@@ -118,6 +118,12 @@
     background-repeat: no-repeat;
 }
 
+@mixin background-image-style-cover () {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @mixin number-list() {
   $i: 1;
   @while $i <= $number-list-length {

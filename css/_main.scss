@@ -38,7 +38,7 @@
     &-item {
       height: 280px;
       padding: 25px 0 0 45px;
-      @include background-image-style();
+      @include background-image-style-cover();
 
       &__descr {
         margin: 0 0 25px 0;
@@ -49,6 +49,28 @@
         padding: 5px 10px;
         @include border-radius(3px);
         @include no-link-style($color-first);
+      }
+    }
+
+    .owl-dot {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: url('#{$directory-image-base}dot.png');
+      margin: 0 10px 0 0;
+      @include background-image-style();
+
+      &:hover,
+      &:active,
+      &.active {
+        background: url('#{$directory-image-base}dot-active.png');
+      }
+
+      &s {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: -30px 0 0;
       }
     }
   }
@@ -63,7 +85,6 @@
       margin: 0 0 30px;
 
       &-item {
-        padding: 15px 20px;
         display: inline-block;
 
         &.active {
@@ -90,6 +111,8 @@
         }
 
         &__link {
+          display: inline-block;
+          padding: 15px 20px;
           color: $color-font-default;
           text-decoration: none;
           @include link-style($color-font-default)
@@ -107,6 +130,13 @@
       &-cont {
         border-right: 1px solid $color-border-first;
 
+        @media screen {
+
+          @media (max-width: 767px) {
+            border: none;
+          }
+        }
+
         &.last {
           border: none;
         }
@@ -115,6 +145,13 @@
       &__item {
         border: 1px solid $color-body-bg;
         padding: 30px;
+
+        @media screen {
+
+          @media (max-width: 767px) {
+            padding: 10px 0;
+          }
+        }
 
         &:hover,
         &:active {
@@ -127,6 +164,17 @@
       &__img {
         margin: 0 auto 20px;
         max-height: 110px;
+
+        @media screen {
+
+          @media (max-width: 767px) {
+            max-height: 100px;
+          }
+
+          @media (min-width: 992px) and (max-width: 1199px) {
+            max-height: 78px;
+          }
+        }
       }
 
       &__link {
@@ -219,6 +267,7 @@
   &-conditions {
     width: 100%;
     padding: 0 10% 30px;
+    margin: 0 0 30px;
     border: 1px solid $color-border-first;
     @include border-radius(3px);
 
