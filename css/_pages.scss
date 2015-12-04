@@ -16,7 +16,7 @@
         &:before {
           content: '';
           position: absolute;
-          top: 19px;
+          top: 15px;
           right: -148px;
           background-image: url( $directory-image-base + 'delimiter-title.png' );
           @include background-image-style();
@@ -30,7 +30,7 @@
         &:before {
           content: '';
           position: absolute;
-          top: 19px;
+          top: 15px;
           left: -148px;
           background-image: url( $directory-image-base + 'delimiter-title2.png' );
           @include background-image-style();

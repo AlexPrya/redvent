@@ -238,24 +238,8 @@
       }
 
       &-button {
-        font-weight: bold;
-        color: $color-font-second;
         width: 100%;
-        padding: 10px 0;
-        text-align: center;
-        background-color: $color-first;
-        border-bottom: 2px solid $color-first-dark;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        outline: none;
         margin: -2px 0 0;
-        @include border-radius(3px);
-
-        //&:active {
-        //  border-bottom: none;
-        //  margin: 0;
-        //}
       }
     }
 

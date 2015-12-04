@@ -47,6 +47,17 @@ ul{
   }
 }
 
+a {
+  color: $color-font-link;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: $color-font-link;
+  }
+}
+
 img {
 
   &.centered {

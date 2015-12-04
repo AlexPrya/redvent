@@ -1,0 +1,17 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.form {
+
+  &-field {
+
+    &__text {
+      text-align: left;
+      padding: 5px 10px;
+      border: 1px solid $color-border-first;
+      background: $color-body-bg;
+      @include border-radius(3px);
+    }
+  }
+}
