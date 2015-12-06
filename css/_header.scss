@@ -43,7 +43,7 @@
         &__link {
           padding: 0 20px 0 0;
           position: relative;
-          color: $color-font-default;
+          @include link-style-invert($color-font-default);
 
           &:before {
             content: '';
@@ -62,9 +62,9 @@
 
         &__link {
           font-weight: bold;
-          color: $color-font-default;
           position: relative;
           padding: 0 0 0 40px;
+          @include link-style-invert($color-font-default);
 
           &:before {
             content: '';
@@ -83,7 +83,7 @@
           padding: 6px 10px;
           border: 1px solid $color-font-default;
           font-weight: bold;
-          color: $color-font-default;
+          @include link-style-invert($color-font-default);
           @include border-radius(15px);
         }
       }

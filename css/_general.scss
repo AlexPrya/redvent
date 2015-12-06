@@ -70,6 +70,7 @@ img {
   &-dashed {
     padding: 15px 25px;
     border: 3px dashed $color-first;
+    @include border-radius(3px);
   }
 
   &-red {
