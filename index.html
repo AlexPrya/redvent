@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/lightbox/ekko-lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Redvent.ru</title>
@@ -16,15 +17,15 @@
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                     <a href="index.html">
                         <img class="img-responsive centered" src="img/logo-top.png" alt="Redvent.ru">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
                     <p>Изготовление и продажа жалюзийных решеток с доставкой по всей России</p>
                 </div>
-                <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+                <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
                     <div class="header-top-contacts">
                         <div class="header-top-contacts__top">
                             <span class="header-top-contacts__phone">
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+                <div class="col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-0">
                     <div class="header-top-personal">
                         <div class="header-top-personal-auth">
                             <a class="header-top-personal-auth__link" href="/">Вход и регистрация</a>
@@ -61,15 +62,10 @@
                 <div class="left-menu-top">
                     <div class="left-menu-top-button">
                         <a class="left-menu-top__link" href="catalog-sections.html">Каталог продукции</a>
-                        <button type="button" class="left-menu-top__burger navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                        <a href="#" class="left-menu-top__burger" data-toggle="collapse" data-target=".left-menu-bottom"></a>
                     </div>
                 </div>
-                <div class="left-menu-bottom navbar-collapse collapse">
+                <div class="left-menu-bottom in">
                     <ul class="left-menu-bottom-list">
                         <li class="left-menu-bottom-list-item">
                             <a class="left-menu-bottom-list-item__link" href="catalog-section.html">Наружные решетки</a>
@@ -148,13 +144,13 @@
                 </div>
                 <div class="left-reviews-block">
                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 left-reviews-block-item">
-                        <a href="/">
+                        <a class="left-reviews-block-item__link" href="img/reviev.png" data-toggle="lightbox" data-gallery="reviews-gallery" data-title="Александр Спиридонов">
                             <img class="img-responsive left-reviews-block-item__img" src="img/reviev.png" alt="">
                             <span class="left-reviews-block-item__name">Александр Спиридонов</span>
                         </a>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-6 left-reviews-block-item">
-                        <a href="/">
+                        <a class="left-reviews-block-item__link" href="img/reviev.png" data-toggle="lightbox" data-gallery="reviews-gallery" data-title="Александр Спиридонов">
                             <img class="img-responsive left-reviews-block-item__img" src="img/reviev.png" alt="">
                             <span class="left-reviews-block-item__name">Александр Спиридонов</span>
                         </a>
@@ -454,22 +450,22 @@
                     <div class="footer-menu">
                         <ul class="footer-menu-list">
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Каталог решеток</a>
+                                <a class="footer-menu-list-item__link" href="catalog-sections.html">Каталог решеток</a>
                             </li>
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Производство</a>
+                                <a class="footer-menu-list-item__link" href="production.html">Производство</a>
                             </li>
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Цены online</a>
+                                <a class="footer-menu-list-item__link" href="price.html">Цены online</a>
                             </li>
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Оплата и Доставка</a>
+                                <a class="footer-menu-list-item__link" href="delivery.html">Оплата и Доставка</a>
                             </li>
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Наши акции</a>
+                                <a class="footer-menu-list-item__link" href="actions.html">Наши акции</a>
                             </li>
                             <li class="footer-menu-list-item">
-                                <a class="footer-menu-list-item__link" href="/">Контактная информация</a>
+                                <a class="footer-menu-list-item__link" href="contacts.html">Контактная информация</a>
                             </li>
                             <li class="footer-menu-list-item">
                             </li>
@@ -503,8 +499,9 @@
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>-->
 
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="owl.carousel/owl.carousel.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+<script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="plugins/lightbox/ekko-lightbox.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

@@ -17,6 +17,29 @@ $('.main-slider').owlCarousel({
     items:1
 });
 
+
+
 //
 // bootstrap.js
 //
+
+
+
+//
+// lightbox
+//
+
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+//
+// other
+//
+
+$('.preventDefault').each(
+    function(){
+        $(this).preventDefault();
+    }
+);

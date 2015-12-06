@@ -548,10 +548,14 @@ img.centered {
       -webkit-border-top-right-radius: 3px; }
     .left-menu-top__burger {
       position: absolute;
-      top: 0;
-      right: 0; }
-      .left-menu-top__burger .icon-bar {
-        background: #fff; }
+      top: 16px;
+      right: 15px;
+      width: 15px;
+      height: 16px;
+      background-image: url("../img/burger.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
     .left-menu-top__link {
       display: block;
       color: #fff;

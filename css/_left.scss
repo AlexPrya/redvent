@@ -21,12 +21,12 @@
 
       &__burger {
         position: absolute;
-        top: 0;
-        right: 0;
-
-        .icon-bar {
-          background: $color-body-bg;
-        }
+        top: 16px;
+        right: 15px;
+        width: 15px;
+        height: 16px;
+        background-image: url("#{$directory-image-base}burger.png");
+        @include background-image-style;
       }
 
       &__link {
