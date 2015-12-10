@@ -1,0 +1,118 @@
+// get mixins and variables
+@import "mixins/mixins";
+@import "variables";
+
+.price {
+
+  &-calc {
+    border: $calc-border-width solid $color-border-first;
+    font-size: 15px;
+
+    &__block {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    &-block {
+      position: relative;
+      padding-bottom: 6px;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin: 30px 0 30px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -15px;
+        right: -15px;
+        height: 6px;
+        background-image: url("#{$directory-image-base}detail-calc-delimiter.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: repeat-x;
+      }
+    }
+
+    &__left {
+      border-right: $calc-border-width solid $color-border-first;
+
+      @media screen {
+
+        @media (max-width: 767px) {
+          border-right: none;
+          border-bottom: $calc-border-width solid $color-border-first;
+        }
+      }
+    }
+
+    &-field {
+       margin: 0 0 30px;
+       position: relative;
+    }
+
+    &__field {
+       margin: 0 0 15px;
+       position: relative;
+    }
+
+    &-price {
+
+      &__name {
+        float: left;
+        font-size: 16px;
+        max-width: 50%;
+      }
+
+      &__val {
+        float: right;
+        font-size: 20px;
+        max-width: 50%;
+      }
+
+      &-total {
+
+        &__name {
+          float: left;
+          font-size: 20px;
+          font-weight: bold;
+          max-width: 50%;
+        }
+
+        &__val {
+          float: right;
+          font-size: 26px;
+          max-width: 50%;
+        }
+      }
+
+      &-sale {
+
+        &__name {
+          float: left;
+          font-size: 16px;
+          max-width: 50%;
+
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -5px;
+            right: -15px;
+            height: 6px;
+            background-image: url("#{$directory-image-base}price-calc-sale.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: repeat-x;
+          }
+        }
+
+        &__val {
+          float: right;
+          font-size: 20px;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}

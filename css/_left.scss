@@ -115,7 +115,7 @@
           position: absolute;
           width: 11px;
           height: 16px;
-          top: 0;
+          top: 3px;
           right: -16px;
           background-image: url( $directory-image-base + 'corner-right.png' );
           @include background-image-style();
@@ -190,7 +190,7 @@
           position: absolute;
           width: 11px;
           height: 16px;
-          top: 0;
+          top: 3px;
           right: -16px;
           background-image: url( $directory-image-base + 'corner-right.png' );
           @include background-image-style();

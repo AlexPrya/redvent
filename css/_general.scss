@@ -36,6 +36,11 @@ h5 {
   font-size: 16px;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 ul{
   margin: 0;
   padding: 0;
@@ -47,22 +52,27 @@ ul{
   }
 }
 
-a {
-  color: $color-font-link;
-
-  &:hover,
-  &:active,
-  &:visited,
-  &:focus {
-    color: $color-font-link;
-  }
-}
+//a {
+//  color: $color-font-link;
+//
+//  &:hover,
+//  &:active,
+//  &:visited,
+//  &:focus {
+//    color: $color-font-link;
+//  }
+//}
 
 img {
 
   &.centered {
     margin: 0 auto;
   }
+}
+
+.row-special {
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 .text {
@@ -144,6 +154,15 @@ img {
           font-weight: bold;
         }
       }
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    span {
+      color: $color-font-disabled;
     }
   }
 }

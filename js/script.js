@@ -23,7 +23,9 @@ $('.main-slider').owlCarousel({
 // bootstrap.js
 //
 
-
+$('body').popover({
+    selector: '[rel="popover"]'
+});
 
 //
 // lightbox
