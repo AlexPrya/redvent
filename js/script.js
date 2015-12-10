@@ -23,8 +23,11 @@ $('.main-slider').owlCarousel({
 // bootstrap.js
 //
 
-$('body').popover({
-    selector: '[rel="popover"]'
+$('#need_feedback').popover({
+    html : true,
+    content: function() {
+        return $('#need_feedback_content').html();
+    }
 });
 
 //

@@ -31,9 +31,34 @@
                             <span class="header-top-contacts__phone">
                                 8(495)795-23-04
                             </span>
-                            <a class="header-top-contacts__link" id="need_feedback" href="#" rel="popover" data-toggle="popover" data-placement="bottom" data-html="true" data-selector="[data-feedback-content='popover']">
+                            <a class="header-top-contacts__link" id="need_feedback" href="#" rel="popover" data-toggle="popover" data-placement="bottom">
                                 Обратный звонок
                             </a>
+                            <div id="need_feedback_content" style="display: none;">
+                                <div class="header-feedback">
+                                    <h3>Обратный звонок</h3>
+                                    <p>
+                                        Укажите ваш номер телефона и имя. Мы перезвоним вам через 15 минут.
+                                    </p>
+                                    <form class="form" action="/">
+                                        <div class="form-field-line">
+                                            <label class="form-field-line__name">
+                                                Ваше имя*
+                                            </label>
+                                            <input class="form-field-line__text form-field__text" type="text">
+                                        </div>
+                                        <div class="form-field-line">
+                                            <label class="form-field-line__name">
+                                                Телефон*
+                                            </label>
+                                            <input class="form-field-line__text form-field__text" type="text">
+                                        </div>
+                                        <div class="form-field-line">
+                                            <input class="button button-first" type="submit" value="Я жду звонка">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="header-top-contacts__bottom">
                             Пн-Пт с 9.00 до 18.00<br>(прием заявок круглосуточно)

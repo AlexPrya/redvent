@@ -18,6 +18,15 @@
     border-left: none;
   }
 
+  &-second {
+    color: $color-font-second;
+    background-color: $color-fourth;
+    border-bottom: 2px solid $color-fourth-dark;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
   &-text {
     text-align: left;
     width: 100%;
