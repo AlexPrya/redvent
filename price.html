@@ -230,15 +230,16 @@
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="calc-field form-field">
-                                                <select name="product_id" id="product_id">
+                                                <select class="calc-field__select form-field__select" name="product_id" id="product_id">
                                                     <option value="1">Вентилляционная наружная решетка ВНТ</option>
                                                     <option value="1">Вентилляционная наружная решетка ВНТ</option>
                                                     <option value="1">Вентилляционная наружная решетка ВНТ</option>
                                                     <option value="1">Вентилляционная наружная решетка ВНТ</option>
                                                 </select>
+                                                <label class="form-label-for-select" for="product_id"></label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                             <div class="price-calc-field">
                                                 <div class="price-calc-field">
                                                     <div class="calc-field form-field">
@@ -253,7 +254,7 @@
                                                     </div>
                                                     <div class="calc-field form-field">
                                                         <span class="calc-field__name form-field__name">Цвет:</span>
-                                                        <a class="calc__link" href="/">выбрать из палитры</a>
+                                                        <a class="calc-field__val calc__link" href="/">выбрать из палитры</a>
                                                         <input type="hidden" id="prod-color">
                                                     </div>
                                                     <div class="calc-field form-field">
@@ -263,34 +264,113 @@
                                                     </div>
                                                 </div>
                                                 <div class="calc-field">
-                                                    <input class="button button-first calc-field__button" type="submit" value="Добавить в корзину">
+                                                    <input class="button button-first price-calc-field__button" type="submit" value="Рассчитать цену">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="price-calc__block">
-                                    <div class="price-calc__field">
+                                    <div class="price-calc__field bottom">
                                         <span class="price-calc-price__name">Цена за единицу товара:</span>
-                                        <span class="price-calc-price__val" id="prod-price-one">10320</span>
+                                        <span class="price-calc-price__val" id="prod-price-one">10320 &#8381;</span>
                                         <div style="clear:both;"></div>
                                     </div>
-                                    <div class="price-calc__field">
+                                    <div class="price-calc__field bottom">
                                         <span class="price-calc-price-sale__name">Цена с учетом скидки 27%:</span>
-                                        <span class="price-calc-price-sale__val" id="prod-price-sale">10320</span>
+                                        <span class="price-calc-price-sale__val" id="prod-price-sale">10320 &#8381;</span>
                                         <div style="clear:both;"></div>
                                     </div>
-                                    <div class="price-calc__field">
-                                        <span class="price-calc-price-total__name">Цена:</span>
-                                        <span class="price-calc-price-total__val" id="prod-price">10320</span>
+                                    <div class="price-calc__field bottom">
+                                        <span class="price-calc-price-total__name">Итого:</span>
+                                        <span class="price-calc-price-total__val" id="prod-price">10320 &#8381;</span>
                                         <input type="hidden" id="prod-price-val">
                                         <div style="clear:both;"></div>
                                     </div>
+                                    <div class="price-calc__descr">
+                                        Цены указаны в Российских рублях, включая НДС
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-calc__right col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="price-calc-prod">
+                                    <div class="price-calc-field-title">
+                                        внешний вид:
+                                    </div>
+                                    <img class="price-calc-prod__img img-responsive" src="img/catalog-detail.png" alt="">
+                                    <p class="price-calc-prod__name">
+                                        Вентилляционная наружная решетка ВНТ
+                                    </p>
+                                </div>
+                                <div class="calc-block-bottom__title">
+                                    Выбранные характеристики
+                                </div>
+                                <div class="calc-block-bottom__field">
+                                    <span class="calc-block-bottom__name">Ширина (габарит):</span>
+                                    <span class="calc-block-bottom__val" id="prod-width-selected">2343 мм</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <div class="calc-block-bottom__field">
+                                    <span class="calc-block-bottom__name">Высота (габарит):</span>
+                                    <span class="calc-block-bottom__val" id="prod-height-selected">1234 мм</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <div class="calc-block-bottom__field">
+                                    <span class="calc-block-bottom__name">Общий вес:</span>
+                                    <span class="calc-block-bottom__val" id="prod-weight-selected">1234 мм</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <div class="calc-block-bottom__field">
+                                    <span class="calc-block-bottom__name">Общий объем:</span>
+                                    <span class="calc-block-bottom__val" id="prod-volume-selected">1234 мм</span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <div class="calc-block-bottom__field">
+                                    <span class="calc-block-bottom__name">Цвет изделия:</span>
+                                    <span class="calc-block-bottom__val" id="prod-color-selected">Нет</span>
+                                    <div style="clear:both;"></div>
                                 </div>
                             </div>
                             <div style="clear:both;"></div>
                         </form>
                     </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h4>Как правильно выбрать</h4>
+                        <p>
+                            - Позвоните нам 8(495) 795-23-04 <br>
+                            - Заказать <a href="#">Обратный звонок</a>
+                        </p>
+                        <h4>Наличие на складе</h4>
+                        <p>
+                            Значимость этих проблем настолько очевидна,
+                            что постоянный количественный рост и сфера нашей
+                            активности в значительной степени обуславливает
+                            создание системы обучения кадров, соответствует
+                            насущным потребностям.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h4>Если нет на складе</h4>
+                        <p>
+                            Значимость этих проблем настолько очевидна,
+                            что постоянный количественный рост и сфера нашей
+                            активности в значительной степени обуславливает
+                            создание системы обучения кадров, соответствует
+                            насущным потребностям в значительной степени обуславливает
+                            создание системы обучения кадров, соответствует
+                            насущным потребностям.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="production-action">
+                            <p class="production-action__text">
+                                Узнайте как сэкономить получив<br>
+                                <b>2 предложения</b> в разных ценовых категориях
+                            </p>
+                            <a class="button button-first production-action-button" href="/">Хочу узнать</a>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
                 </div>
             </div>
         </div>

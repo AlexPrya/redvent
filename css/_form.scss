@@ -38,5 +38,21 @@
       background: $color-body-bg;
       @include border-radius(3px);
     }
+
+    &__select {
+      background-color: $color-body-bg;
+      border: 1px solid $color-border-first;
+      padding: 4px 30px 4px 3px;
+    }
+  }
+
+  &-label-for-select {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 31px;
+    height: 29px;
+    background-image: url('#{$directory-image-base}select-delimiter.png');
+    @include background-image-style;
   }
 }

@@ -65,6 +65,67 @@
             height: 8px;
           }
         }
+
+        &__form {
+          width: 400px;
+          text-align: left;
+        }
+      }
+      &-modal {
+        background-color: $color-popup-bg;
+      }
+
+      &-popup {
+        padding: 0 15px;
+
+        &__title {
+          position: relative;
+          display: inline-block;
+          margin: 15px 0 20px;
+
+          &.auth {
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: 22px;
+              height: 33px;
+              top: 0;
+              right: -30px;
+              background-image: url('#{$directory-image-base}keys.png');
+            }
+          }
+        }
+
+        &__field {
+          margin: 0 0 15px;
+        }
+
+        &__name {
+          display: block;
+          width: 100%;
+          font-weight: normal;
+          margin: 0 0 6px;
+        }
+
+        &__text {
+          width: 100%;
+          text-align: left;
+          padding: 5px 10px;
+          border: 1px solid $color-border-first;
+          background: $color-body-bg;
+        }
+
+        &__button {
+          @include link-style($color-font-link);
+          margin: 0 20px;
+        }
+
+        &__forgot {
+          display: block;
+          margin: 0 0 15px;
+          @include link-style($color-font-link);
+        }
       }
 
       &-basket {
@@ -89,11 +150,20 @@
 
         &__count {
           margin: 0 0 0 10px;
-          padding: 6px 10px;
-          border: 1px solid $color-font-default;
+          padding: 5px 10px;
+          border: 2px solid $color-font-default;
           font-weight: bold;
-          @include link-style-invert($color-font-default);
-          @include border-radius(15px);
+          text-decoration: none;
+          color: $color-font-default;
+          @include border-radius(20px);
+
+          &:hover,
+          &:active,
+          &:visited,
+          &:focus {
+            color: $color-font-default;
+            text-decoration: none;
+          }
         }
       }
     }

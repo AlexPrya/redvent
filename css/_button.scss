@@ -16,6 +16,15 @@
     border-top: none;
     border-right: none;
     border-left: none;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      color: $color-font-second;
+      text-decoration: none;
+    }
   }
 
   &-second {
@@ -25,6 +34,14 @@
     border-top: none;
     border-right: none;
     border-left: none;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      color: $color-font-second;
+      text-decoration: none;
+    }
   }
 
   &-text {

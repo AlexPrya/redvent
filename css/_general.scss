@@ -79,8 +79,8 @@ img {
 
   &-dashed {
     padding: 15px 25px;
-    border: 3px dashed $color-first;
-    @include border-radius(3px);
+    border: 2px dashed $color-first;
+    @include border-radius(5px);
   }
 
   &-red {
@@ -164,5 +164,26 @@ img {
     span {
       color: $color-font-disabled;
     }
+  }
+}
+
+.error {
+  text-align: center;
+
+  &-img {
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 25px;
+  }
+
+  &-descr {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    font-size: 16px;
   }
 }

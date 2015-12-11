@@ -87,10 +87,30 @@
 
   &-detail {
 
+    &-info {
+      padding: 0 0 0 70px;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 47px;
+        height: 47px;
+        background-image: url('#{$directory-image-base}rule.png');
+        @include background-image-style();
+      }
+    }
+
     &-block {
 
       &-item {
         margin: 0 0 30px;
+
+        &-title {
+          font-size: 18px;
+        }
       }
 
       &-descr {

@@ -7,22 +7,23 @@
   &-nav {
     border-top: 1px solid $color-border-first;
     border-bottom: 1px solid $color-border-first;
-    margin: 0 0 20px;
+    margin: 10px 0 20px;
 
     &-list {
-      padding: 15px 0;
+      padding: 15px 0 5px;
 
       &-item {
         list-style: none;
         float: left;
         padding: 0 7px;
+        height: 32px;
 
         &__link {
-          padding: 5px 10px 8px 10px;
+          padding: 5px 12px 8px 12px;
           background-color: $color-body-bg;
           color: $color-font-link;
           text-decoration: underline;
-          @include border-radius(3px);
+          @include border-radius(5px);
 
           &:visited,
           &:focus {
@@ -89,7 +90,7 @@
     &-row {
 
       &.head {
-        background-color: $color-third;
+        background-color: $color-card-head;
 
         .card-list-col {
           border-bottom: none;
@@ -98,8 +99,8 @@
     }
 
     &-col {
-      border-right: 1px solid $color-border-first;
-      border-bottom: 1px solid $color-border-first;
+      border-right: 1px solid $color-card-border;
+      border-bottom: 1px solid $color-card-border;
       padding: 10px;
       font-size: 14px;
       text-align: left;
