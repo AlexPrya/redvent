@@ -19,11 +19,19 @@
       margin: 0 0 30px;
 
       &__img {
-        margin: 0 0 10px;
+        margin: 0 auto 10px;
       }
 
       &__link {
         @include link-style($color-font-link);
+
+        @media screen {
+
+          @media (max-width: 767px) {
+            display: block;
+            text-align: center;
+          }
+        }
       }
     }
   }
@@ -165,6 +173,7 @@
     }
 
     &-similar {
+      margin: 0 0 40px;
 
       &-title {
         text-align: center;

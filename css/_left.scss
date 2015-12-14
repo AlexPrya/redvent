@@ -75,6 +75,15 @@
   &-slider {
     margin: 0 0 20px;
 
+    @media screen {
+
+      @media (max-width: 991px) {
+        width: 270px;
+        max-width: 100%;
+        margin: 0 auto 20px;
+      }
+    }
+
     &-top {
       width: 100%;
       font-weight: bold;
@@ -92,8 +101,15 @@
 
     &-item {
       width: 100%;
-      @include background-image-style-cover();
       display: inline;
+      @include background-image-style-cover();
+
+      @media screen {
+
+        @media (max-width: 991px) {
+          width: auto;
+        }
+      }
     }
 
     &-bottom {

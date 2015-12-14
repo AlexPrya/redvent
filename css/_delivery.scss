@@ -9,6 +9,13 @@
     margin: 0 0 40px;
     position: relative;
 
+    @media screen {
+
+      @media (max-width: 767px) {
+        padding: 0 0 0 25%;
+      }
+    }
+
     &:before {
       content: '';
       top: 0;
@@ -16,6 +23,14 @@
       position: absolute;
       width: 107px;
       @include background-image-style;
+
+      @media screen {
+
+        @media (max-width: 767px) {
+          left: 2%;
+          max-width: 20%;
+        }
+      }
     }
 
     &.first {
@@ -75,6 +90,13 @@
       font-size: 14px;
       position: relative;
 
+      @media screen {
+
+        @media (max-width: 767px) {
+          padding: 0 0 0 25%;
+        }
+      }
+
       &:before {
         content: '';
         position: absolute;
@@ -82,8 +104,15 @@
         left: 0;
         width: 78px;
         height: 37px;
-        @include background-image-style;
         background-image: url("#{$directory-image-base}deliv-car.png");
+        @include background-image-style;
+
+        @media screen {
+
+          @media (max-width: 767px) {
+            max-width: 20%;
+          }
+        }
       }
     }
 

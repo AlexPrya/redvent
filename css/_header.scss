@@ -10,6 +10,13 @@
     &-contacts {
       float: right;
 
+      @media screen {
+
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin: 0 0 10px;
+        }
+      }
+
       &__top {
         padding: 0 0 2px;
       }
@@ -37,7 +44,7 @@
       }
 
       &__phone {
-        font-size: 19px;
+        font-size: 18px;
         font-weight: bold;
         margin: 0 10px 0 0;
       }
@@ -45,6 +52,13 @@
 
     &-personal {
       text-align: right;
+
+      @media screen {
+
+        @media (min-width: 768px) and (max-width: 991px) {
+          text-align: left;
+        }
+      }
 
       &-auth {
         margin: 0 0 10px;

@@ -16,12 +16,11 @@
     background: $color-second;
     color: $color-font-second;
     padding: 20px 0;
-
   }
 
   &-menu {
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0 0 35px;
 
     &-list {
 
@@ -32,6 +31,16 @@
         &__link {
           @include link-style($color-font-second)
         }
+      }
+    }
+  }
+
+  &-copyright {
+
+    @media screen {
+
+      @media (max-width: 991px) {
+        margin: 0 0 30px;
       }
     }
   }
