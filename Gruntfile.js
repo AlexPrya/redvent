@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
     var jsFiles =
         [
-            "js/*.js"
+            "js/**/*.js"
         ];
 
     // Инициализация конфига GruntJS
